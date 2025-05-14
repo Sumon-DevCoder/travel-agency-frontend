@@ -114,6 +114,19 @@ const Navbar = () => {
       hasDropdown: false,
     },
     {
+      name: "Blog",
+      href: "/pages/blog",
+      hasDropdown: true,
+      dropdownItems: [
+        { name: "Bangladesh", href: "/pages/blog/bangladesh" },
+        { name: "Japan", href: "/pages/blog/japan" },
+        { name: "Malaysia", href: "/pages/blog/malaysia" },
+        { name: "Saudi Arabia", href: "/pages/blog/saudi-arabia" },
+        { name: "Singapore", href: "/pages/blog/singapore" },
+        { name: "Thailand", href: "/pages/blog/thailand" },
+      ],
+    },
+    {
       name: "Air Tickets",
       href: "/pages/air-tickets",
       hasDropdown: true,
@@ -166,27 +179,7 @@ const Navbar = () => {
         },
       ],
     },
-    {
-      name: "Pages",
-      href: "/pages",
-      hasDropdown: true,
-      dropdownItems: [
-        { name: "Special Offer", href: "/pages/special-offer" },
-        {
-          name: "Blog",
-          href: "/pages/blog",
-          hasSubmenu: true,
-          submenuItems: [
-            { name: "Bangladesh", href: "/pages/blog/bangladesh" },
-            { name: "Japan", href: "/pages/blog/japan" },
-            { name: "Malaysia", href: "/pages/blog/malaysia" },
-            { name: "Saudi Arabia", href: "/pages/blog/saudi-arabia" },
-            { name: "Singapore", href: "/pages/blog/singapore" },
-            { name: "Thailand", href: "/pages/blog/thailand" },
-          ],
-        },
-      ],
-    },
+    { name: "Special Offer", href: "/pages/special-offer" },
     {
       name: "Contact",
       href: "/contact",
@@ -200,9 +193,11 @@ const Navbar = () => {
       "rounded-lg shadow-xl bg-white ring-1 ring-gray-200 transition-all duration-200 transform origin-top overflow-hidden";
 
     // Width classes based on the dropdown type
-    if (linkName === "Destination") return `${baseClasses} w-96`;
+    if (linkName === "Destination") return `${baseClasses} w-[450px]`;
+    if (linkName === "Visa Service") return `${baseClasses} w-[450px]`;
+    if (linkName === "Destination") return `${baseClasses} w-[450px]`;
     if (linkName === "Pages") return `${baseClasses} w-80`;
-    return `${baseClasses} w-72`;
+    return `${baseClasses} w-56`;
   };
 
   return (
@@ -241,7 +236,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden lg:flex lg:items-center lg:space-x-6">
+          <div className="hidden lg:flex lg:items-center lg:space-x-4">
             {navLinks.map((link) => (
               <div
                 key={link.name}
@@ -251,7 +246,7 @@ const Navbar = () => {
               >
                 {link.hasDropdown ? (
                   <div
-                    className={`relative text-gray-700 hover:text-green-600 group px-3 py-2 rounded-md text-sm font-medium inline-flex items-center overflow-hidden cursor-pointer ${
+                    className={`relative text-gray-700 hover:text-green-600 group px-3 py-2 rounded-md text-sm md:text-md font-medium inline-flex items-center overflow-hidden cursor-pointer ${
                       hoveredDropdown === link.name
                         ? "text-green-600 bg-green-50"
                         : ""
@@ -268,7 +263,7 @@ const Navbar = () => {
                 ) : (
                   <Link
                     href={link.href}
-                    className="relative text-gray-700 hover:text-green-600 group px-3 py-2 rounded-md text-sm font-medium inline-flex items-center overflow-hidden"
+                    className="relative text-gray-700 hover:text-green-600 group px-3 py-2 rounded-md text-sm md:text-md font-medium inline-flex items-center overflow-hidden"
                   >
                     <span className="relative z-10">{link.name}</span>
                     <span className="absolute left-0 bottom-0 h-full w-0 bg-green-100 transition-all duration-300 ease-in-out group-hover:w-full -z-0"></span>
