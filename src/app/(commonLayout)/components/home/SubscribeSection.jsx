@@ -221,7 +221,7 @@ const TravelSubscribeComponent = () => {
           {/* YouTube video modal */}
           <div
             id="youtubeModal"
-            className="fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex items-center justify-center p-4"
+            className="fixed inset-0 bg-black bg-opacity-75 z-50  flex items-center justify-center p-4"
           >
             <div className="relative bg-white rounded-lg overflow-hidden max-w-4xl w-full">
               <button
