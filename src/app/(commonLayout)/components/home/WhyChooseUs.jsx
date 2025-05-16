@@ -402,7 +402,7 @@ export default function WhyChooseTripfy() {
               </div>
 
               <motion.div
-                className="mt-8 flex items-center"
+                className="mt-8 flex items-center hidden md:block"
                 initial="hidden"
                 animate={isVisible ? "visible" : "hidden"}
                 variants={textAnimation}
