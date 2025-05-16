@@ -115,15 +115,15 @@ const Navbar = () => {
     },
     {
       name: "Blog",
-      href: "/pages/blog",
+      href: "/blog",
       hasDropdown: true,
       dropdownItems: [
-        { name: "Bangladesh", href: "/pages/blog/bangladesh" },
-        { name: "Japan", href: "/pages/blog/japan" },
-        { name: "Malaysia", href: "/pages/blog/malaysia" },
-        { name: "Saudi Arabia", href: "/pages/blog/saudi-arabia" },
-        { name: "Singapore", href: "/pages/blog/singapore" },
-        { name: "Thailand", href: "/pages/blog/thailand" },
+        { name: "Bangladesh", href: "/blog/bangladesh" },
+        { name: "Japan", href: "/blog/japan" },
+        { name: "Malaysia", href: "/blog/malaysia" },
+        { name: "Saudi Arabia", href: "/blog/saudi-arabia" },
+        { name: "Singapore", href: "/blog/singapore" },
+        { name: "Thailand", href: "/blog/thailand" },
       ],
     },
     {

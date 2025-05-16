@@ -1,5 +1,5 @@
 import { ChevronRight, Home } from "lucide-react";
-export default function ContactHeader({ pageName }) {
+export default function DynamicHeader({ pageName }) {
   return (
     <div className="relative w-full h-64 md:h-80 lg:h-96 overflow-hidden">
       {/* Background Image */}

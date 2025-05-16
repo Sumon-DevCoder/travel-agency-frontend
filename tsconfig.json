@@ -22,6 +22,15 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/Shared/Footer.jsx", "src/components/Shared/Navbar.jsx", "next.config.js", "src/app/(commonLayout)/components/home/TourCategory.jsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/components/Shared/Footer.jsx",
+    "src/components/Shared/Navbar.jsx",
+    "next.config.ts",
+    "src/app/(commonLayout)/components/home/TourCategory.jsx"
+  ],
   "exclude": ["node_modules"]
 }
