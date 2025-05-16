@@ -1,4 +1,6 @@
-import TestimonialSection from "./components/home/TestimonialSection.jsx";
+import TourCategory from "./components/home/TourCategory";
+import TravelOffer from "./components/home/TravelOffer";
+import WhyChooseUs from "./components/home/WhyChooseUs";
 
 export const metadata = {
   title: "Home Page",
@@ -7,8 +9,10 @@ export const metadata = {
 
 const HomePage = () => {
   return (
-    <div>
-      <TestimonialSection />
+    <div className="px-5">
+      <TourCategory />
+      <TravelOffer />
+      <WhyChooseUs />
     </div>
   );
 };
